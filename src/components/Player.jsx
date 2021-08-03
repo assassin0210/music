@@ -46,9 +46,9 @@ export const Player = ({setSongs, currentSong, setSongInfo, songInfo, isPlaying,
                     active: false,
                 }
             }
-        },[currentSong])
+        })
         setSongs(newSong)
-    })
+    },[currentSong])
 
     const playSongHandler = () => {
 
