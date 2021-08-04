@@ -13,12 +13,15 @@
 .time-control{
   display: flex;
   width: 50%;
+  align-items: center;
   input{
     width: 100%;
-    padding: 1rem 0rem;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: pointer;
   }
   p{
-    padding: 1rem;
+    padding: 0 1rem;
   }
 }
 .play-control{
@@ -31,3 +34,35 @@
     cursor: pointer;
   }
 }
+
+input[type='range']:focus{
+  outline:none;
+}
+
+input[type='range']::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: transparent;
+}
+.track{
+  background: lightblue;
+  height: 1rem;
+  width: 100%;
+  position: relative;
+  border-radius: 1rem;
+
+  overflow: hidden;
+}
+.animate-track{
+  background: rgb(204,204,204);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(10%);
+  pointer-events: none;
+  overflow: hidden;
+}
+

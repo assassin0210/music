@@ -11,7 +11,7 @@ function musiclibrary(){
             cover:'https://chillhop.com/wp-content/uploads/2021/05/732128e1da8fd5f6292ffc1926a2ea840a54f4d0-1024x1024.jpg',
             artist:'Toonorth',
             audio:'https://mp3.chillhop.com/serve.php/?mp3=17933',
-            color:['394E69','454B61'],
+            color:['#436897','#252838'],
             id:uuidv4(),
             active: true
         },
@@ -20,7 +20,7 @@ function musiclibrary(){
             cover:'https://chillhop.com/wp-content/uploads/2021/04/cb0cc6270d7f2e1bb13e44e8832bd5c9b2a61080-1024x1024.jpg',
             artist:'Evil Needle',
             audio:'https://mp3.chillhop.com/serve.php/?mp3=14958',
-            color:['E6A156','EF464D'],
+            color:['#E6A156','#EF464D'],
             id:uuidv4(),
             active: false
         },
@@ -29,7 +29,7 @@ function musiclibrary(){
             cover:'https://chillhop.com/wp-content/uploads/2021/02/7f102bdde417f6ead9a120b2b931449e5c12b4da-1024x1024.jpg',
             artist:'Aarigod',
             audio:'https://mp3.chillhop.com/serve.php/?mp3=13005',
-            color:['B9D276','19220F'],
+            color:['#B9D276','#19220F'],
             id:uuidv4(),
             active: false
         },
@@ -39,7 +39,7 @@ function musiclibrary(){
             cover:'https://chillhop.com/wp-content/uploads/2021/04/cb0cc6270d7f2e1bb13e44e8832bd5c9b2a61080-1024x1024.jpg',
             artist:'Evil Needle',
             audio:'https://mp3.chillhop.com/serve.php/?mp3=17087',
-            color:['E6A156','EF464D'],
+            color:['#E6A156','#EF464D'],
             id:uuidv4(),
             active: false
         },
@@ -49,7 +49,7 @@ function musiclibrary(){
             cover:'https://chillhop.com/wp-content/uploads/2021/03/74d62bc9370a68e440c1b98eaf650344f0a7faea-1024x1024.jpg',
             artist:'SwuM',
             audio:'https://mp3.chillhop.com/serve.php/?mp3=15224',
-            color:['54422C','263133'],
+            color:['#54422C','#263133'],
             id:uuidv4(),
             active: false
         },
@@ -58,7 +58,7 @@ function musiclibrary(){
             cover:'https://chillhop.com/wp-content/uploads/2021/03/74d62bc9370a68e440c1b98eaf650344f0a7faea-1024x1024.jpg',
             artist:'SwuM',
             audio:'https://mp3.chillhop.com/serve.php/?mp3=15226',
-            color:['54422C','263133'],
+            color:['#54422C','#263133'],
             id:uuidv4(),
             active: false
         },
@@ -67,7 +67,7 @@ function musiclibrary(){
             cover:'https://chillhop.com/wp-content/uploads/2021/02/7f102bdde417f6ead9a120b2b931449e5c12b4da-1024x1024.jpg',
             artist:'Aarigod',
             audio:'https://mp3.chillhop.com/serve.php/?mp3=12997',
-            color:['B9D276','19220F'],
+            color:['#B9D276','#19220F'],
             id:uuidv4(),
             active: false
         },
@@ -76,7 +76,7 @@ function musiclibrary(){
             cover:'https://chillhop.com/wp-content/uploads/2021/05/732128e1da8fd5f6292ffc1926a2ea840a54f4d0-1024x1024.jpg',
             artist:'Toonorth',
             audio:'https://mp3.chillhop.com/serve.php/?mp3=17925',
-            color:['394E69','454B61'],
+            color:['#394E69','#454B61'],
             id:uuidv4(),
             active: false
         },
@@ -86,7 +86,7 @@ function musiclibrary(){
             cover:'https://avatars.yandex.net/get-music-content/63210/90e17f29.a.1910404-1/m1000x1000',
             artist:'Linkin Park',
             audio:InTheAnd,
-            color:['D9D7D2','514E49'],
+            color:['#D9D7D2','#514E49'],
             id:uuidv4(),
             active: false
         },
@@ -95,7 +95,7 @@ function musiclibrary(){
             cover:'https://avatars.yandex.net/get-music-content/142001/5f909cfc.a.624758-3/m1000x1000',
             artist:'System of a Down',
             audio:ChopS,
-            color:['9C703F','B6A393'],
+            color:['#9C703F','#B6A393'],
             id:uuidv4(),
             active: false
         },
@@ -104,7 +104,7 @@ function musiclibrary(){
             cover:'https://avatars.yandex.net/get-music-content/117546/e88313dd.a.6935042-2/m1000x1000',
             artist:'Mike Shinoda',
             audio:MikeShinoda,
-            color:['D0CED1','49291C'],
+            color:['#D0CED1','#49291C'],
             id:uuidv4(),
             active: false
         },
@@ -113,7 +113,7 @@ function musiclibrary(){
             cover:'https://avatars.yandex.net/get-music-content/34131/e07c415d.a.33097-1/m1000x1000',
             artist:'Evanescence',
             audio:Evanescence,
-            color:['D6E8EE','0E559D'],
+            color:['#D6E8EE','#0E559D'],
             id:uuidv4(),
             active: false
         },

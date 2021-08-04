@@ -13,49 +13,54 @@ function App() {
     const [isPlaying, setIsPlaying] = useState(false)
     const [songInfo, setSongInfo] = useState({
         currentTime: 0,
-        duration: 0
+        duration: 0,
+        animationPercentage: 0,
     })
-    const [libraryStatus , setLibraryStatus] =useState(false)
-const libraryStatusHandler =()=>{
-    setLibraryStatus(!libraryStatus)
-}
+    const [libraryStatus, setLibraryStatus] = useState(false)
+    const libraryStatusHandler = () => {
+        setLibraryStatus(!libraryStatus)
+    }
 
 
     const timeUpdateHandler = (e) => {
         const currentTime = e.target.currentTime;
         const duration = e.target.duration;
-        setSongInfo({...songInfo, currentTime, duration})
+        const roudedCurrent = Math.round(currentTime)
+        const roudedDuration = Math.round(duration)
+        const animationInput = Math.round((roudedCurrent / roudedDuration) * 100)
+
+        setSongInfo({...songInfo, currentTime, duration, animationPercentage: animationInput})
     }
 
     return (
-            <div className="App">
-                <Nav libraryStatusHandler={libraryStatusHandler} />
-                <Song currentSong={currentSong}/>
-                <Player isPlaying={isPlaying}
-                        setCurrentSong={setCurrentSong}
-                        songs={songs}
-                        songInfo={songInfo}
-                        setSongInfo={setSongInfo}
-                        audioRef={audioRef}
-                        setIsPlaying={setIsPlaying}
-                        currentSong={currentSong}
-                        setSongs={setSongs}
-                />
-                <Library audioRef={audioRef}
-                         libraryStatus={libraryStatus}
-                         setSongs={setSongs}
-                         currentSong={currentSong}
-                         setCurrentSong={setCurrentSong}
-                         songs={songs}
-                         isPlaying={isPlaying}
-                />
-                <audio onTimeUpdate={timeUpdateHandler}
-                       onLoadedMetadata={timeUpdateHandler}
-                       ref={audioRef}
-                       src={currentSong.audio}>
+        <div className="App">
+            <Nav libraryStatusHandler={libraryStatusHandler}/>
+            <Song currentSong={currentSong}/>
+            <Player isPlaying={isPlaying}
+                    setCurrentSong={setCurrentSong}
+                    songs={songs}
+                    songInfo={songInfo}
+                    setSongInfo={setSongInfo}
+                    audioRef={audioRef}
+                    setIsPlaying={setIsPlaying}
+                    currentSong={currentSong}
+                    setSongs={setSongs}
+            />
+            <Library audioRef={audioRef}
+                     libraryStatus={libraryStatus}
+                     setSongs={setSongs}
+                     currentSong={currentSong}
+                     setCurrentSong={setCurrentSong}
+                     songs={songs}
+                     isPlaying={isPlaying}
+            />
+            <audio onTimeUpdate={timeUpdateHandler}
+                   onLoadedMetadata={timeUpdateHandler}
+                   ref={audioRef}
+                   src={currentSong.audio}>
 
-                </audio>
-            </div>
+            </audio>
+        </div>
     );
 }
 
